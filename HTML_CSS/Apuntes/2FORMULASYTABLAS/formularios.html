@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="resultados.html" method="GET"><!-- Action hace referencia a la url o documento que nosotros queremos enviar este
+         formulario, POST lo que hace es que envia a resultados.html la informacion a un  servidor pero no funciona, el metodo 
+        GET si funciona ya que nosotros estamos trabajando con nuestro pc no con un servidor, pero el GET se ve en la url y POST no ,
+    por lo  que es mucho mas seguro el metodo POST-->
+      <div>
+        <label for="nombreusuario">Nombre de usuario</label>
+        <!-- Asi con label y el for, al pulsar en Nombre de usuario nos dice que input es -->
+        <input type="text" name="nombreusuario" id="nombreusuario" required /><!--El name y el id es para saber que label se corresponde a que input -->
+      </div>
+      <br>
+      <div>
+        <label for="edad">Cual es tu edad</label> 
+        <input type="number" name="edad" id="edad" required /><!--Required es para que el campo sea obligatorio, sin el campo relleno no se envia el formulario-->
+      </div>
+      <div>
+        <label for="password">contraseña</label>
+        <input type="password" name="password" id="password" />
+        
+      <label>Comentarios</label>
+      <textarea></textarea>
+      <button type="reset">Reset</button>
+        <button  type="submit">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

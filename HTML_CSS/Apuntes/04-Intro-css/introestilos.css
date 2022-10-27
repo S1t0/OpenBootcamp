@@ -1,0 +1,46 @@
+/*Estilos para colores*/
+.colores{
+    color:orangered;
+}
+
+.color-hexadecimal{
+    color:#58A4B0;
+
+}
+.color-rgb{
+    color:rgb(30, 200, 0);
+    font-size:25px;
+}
+.color-rgba{
+    font-size:25px;
+    color:rgba(10,10,10,0.2);/*Es igual que el rgb pero el a, es la opacidad*/
+}
+
+/*Fondos*/
+.fondo{
+    font-size: 25px;
+    background-color: cornflowerblue;
+    background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/06/Seamless-Polygon-Background.jpg");
+    background-position: center;
+    
+}
+
+.ancho{
+    background-color: #58A4B0;
+    width:200px;/*width es ancho*/
+}
+.alto{
+    background-color:aquamarine;
+    height: 300px;
+    width: 300px;
+}
+.tarjeta{
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    border-top:none;/*quita el borde por arriba*/
+    /*padding:10px 20px 30px 40px;--padding es el espacio que hay entre el contenedor y el contenido, los numero hacen referencia en el sentido de las agujas del reloj*/
+    padding:10px 20px;
+    margin:50px;/*margin es el espacio que hay por fuera del contenedor con los elementos de fuera*/
+    
+}

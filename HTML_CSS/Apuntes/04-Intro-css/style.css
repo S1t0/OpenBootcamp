@@ -1,0 +1,38 @@
+/*SELECTORES*/
+/*selector univeral*/
+*.warning{
+    color:red;
+}
+/*de tipo*/
+h1{
+    color:red;
+}
+/*Esto es un comentario*/
+p{
+    color:blue;
+    font-size: 25pt;
+}
+
+
+
+/*de id*/
+#segundo-parrafo{
+    color:green;
+}
+#primer-parrafo{
+    color:chocolate;
+}
+
+/*de clase*/
+
+.otroh1{
+    color:yellow;
+}
+.otroh2{
+    font-size: 30pt;
+    text-transform: uppercase;
+}
+
+.autor,.fecha, .ubicacion{/*esta es otra forma de seleccionar*/
+    text-decoration: underline;
+}

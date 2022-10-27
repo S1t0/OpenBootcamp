@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" 
+    integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <title> Utilidades css</title>
+    <!--Aqui introducimos los estilos a traves de un link en lugar de en un archivo css, aqui lo vamos a hacer con pure css-->
+    <style> /*otra forma de poner estilos en directamente en la etiqueta style, aunq no es lo mas apropiado*/
+        p{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hola mundo</p>
+    <button class="pure-button">Boton final</button><!--Poniendo directamente la clase en la etiqueta se aplia el estilo de pure css, al igual que bootstrap tailwind, etc-->
+    <button class="pure-button" disabled="">A Disabled Button</button>
+    <button class="pure-button pure-button-active">An Active Button</button>
+    <button style="color:red;padding:15px;border-radius:10px">Boton personalizado</button><!--Otra forma es asi, estilos en linea, dentro de la etiqueta directamente-->
+</body>
+</html>
+
+<!--Aqui vemos varias formas de introducir css en nuestra pagina, pero la mejor forma es con una hoja de estilos, como style.css-->

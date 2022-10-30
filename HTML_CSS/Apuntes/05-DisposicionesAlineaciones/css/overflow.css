@@ -1,0 +1,32 @@
+.contenedor-hidden{
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding:15px;
+    overflow: hidden;/*Todo lo que sobresalga se oculta con hidden*/
+}
+.contenedor-scroll{
+    margin:10px 0px;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding:15px;
+    overflow: scroll;/*Todo lo que sobresalga se oculta y tiene una barra de scroll para ir viendolo, tambien podemos seleccionar 
+    en que eje queremos hacer scroll con scroll-x y scroll-y*/
+}
+.contenedor-visible{
+    margin:10px 0px;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding:15px;
+    overflow: visible;
+}
+.contenedor-auto{
+    margin:10px 0px;
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding:15px;
+    overflow: auto;
+}

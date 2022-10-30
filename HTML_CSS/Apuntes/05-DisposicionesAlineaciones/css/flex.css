@@ -1,0 +1,30 @@
+.flex{/*por defecto display flex deja todo en una fila, pegado arriba a la izquierda*/
+    display:flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content:space-around;/*Justify content tiene varias opciones, mueve los elementos que hay dentro de la clase en el que se esta usando,
+    los mueve en el eje x*/
+    flex-wrap: wrap-reverse;/*por defecto tiene nowrap, flex wrap nos hace que al redimensionar no se hagan mas pequeños los elementos,
+    si no cogen en la fila bajan a la siguiente fila*/
+    align-items:flex-end;/*pnos mueve los elementos en el eje de la y, si le quitamos la altura a los divs, con align-items los podemos
+    mover en el eje y a razon del tamaño del padre*/
+    flex-direction:row-reverse;/*flex direction cambia los ejes, podemos decir que el eje principal sea el y siendo el secundario el x*/
+}
+.Contenido-1{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border:1px solid blue;
+}
+.Contenido-2{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border:1px solid blue;
+}
+.Contenido-3{
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    border:1px solid blue;
+}

@@ -1,0 +1,39 @@
+div{
+    border:1px solid black;
+    padding:5px;
+    margin:5px;
+}
+.relative{/*posicionamiento relativo, se posiciona en relacion al posicionamiento original*/
+    position: relative;
+    left:80px;/*de la izquierda se separa 80px*/
+    margin-left: 10px;
+}
+.fixed{/* siempre se va a mantener fijo, no utiliza mas espacio del que necesita, al hacer scroll sigue en su posicion no se pierde*/
+    position:fixed;
+    bottom:20px;/*se queda abajo, se le marca los px que queremos de distancia en cuanto a la parte de abajo*/
+    left:0px;
+    z-index: 10;/*el z-index te dice si se ve por encima o debajo de otro elemento */
+}
+/*posicionamiento absoluto, se pone en la posicion que le digamos en referencia al padre, pero si hacemos scroll, se pierde ya que siempre esta en la parte que le marquemos*/
+.absolute{
+    position:absolute;
+    top:0px;
+    right: 0px;
+    margin:0;/*al darle margin 0 se pega totalmente a la esquina, si se lo quitamos tiene por defecto algo de margen*/
+
+}
+
+.relative.contenedor{
+    width: 300px;
+    height: 1500px;
+    background-color: blue;
+}
+
+.sticky{/*sticky hace que el elemento al hacer scroll se quede fijo en la posicion que le indiquemos*/
+    position: sticky;
+    background-color: darksalmon;
+    color:white;
+    top:40px;
+    z-index:2;
+}
+

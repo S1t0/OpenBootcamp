@@ -1,0 +1,37 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+.hover{
+    width: 300px;
+    height: 100px;
+    background-color: bisque;
+}
+.hover:hover{/* para poner la pseudoclase se ponen : y despues la pseudoclase que le queramos dar*/
+    background-color: red;
+    
+}
+
+.listado{
+    padding: 15px;
+    background-color: aquamarine;
+
+}
+
+.listado p:first-child{/*first-child hacer referencia al primer hijo de listado, es decir el primer p en este caso*/
+    color:white;
+}
+
+a:link{/*link no visitado todavia*/
+    color:red;
+}
+a:visited{/*con este se pone en el color yellos los links visitados*/
+    color:yellow;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:black;
+}

@@ -1,0 +1,42 @@
+/*Los pseudoelementos permiten modificar o añadir estilos a una parte concreta del documento html*/
+
+.contenedor{
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+
+}
+span.frase{
+    font-style: italic;
+}
+span.frase::before{/*Con el pseudoelemento before, le ponemos << antes del parrafo, asi lo ponemos sin escribirlo en el html*/
+    content: "<< ";
+    font-size: xx-small;
+}
+span.frase::after{
+    content: " >>";
+    font-size: xx-small;
+}
+
+.libro{
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial;
+}
+
+.libro p::first-letter{
+    font-size: xx-large;
+}
+.libro p::first-line{
+    color:white;
+}
+
+.libro p::selection{
+    color:red;
+    background-color: lime;
+}
+
+
+.listado ul li::marker{/*dentro de la clase listado, accede a ul y a los li ponles el punto en rojo*/
+    color:red;
+}

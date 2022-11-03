@@ -1,0 +1,30 @@
+/*la especificidad va en relacion a que tipo tiene mas prevalencia, el important es el mayor de todos,aunque no se aconseja
+usarlo,  luego los estilos en linea, despues el id prevalece sobre la clase, la clase sobre el elemento, 
+se quedaria de la siguiente forma
+
+!important
+estilos en linea
+#id
+.clases
+<elementos/>
+*selector universal
+
+*/
+#h1-id{
+    color:blue;
+}
+
+h1{
+    color:blue;
+}
+
+.h1-clase{
+    color:yellow;
+}
+h1{
+    color:green;
+}
+p{
+    color:red;
+}
+

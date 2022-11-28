@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.boton{
+    position: relative;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-bottom: 2px solid darkgreen;
+    cursor:pointer;
+    transition: background-color 150ms;
+
+}
+
+.boton:hover{
+    background-color: rgb(4, 95, 4);
+
+}
+/* 
+.boton:hover::before{
+    content: "Esto es un tooltip";
+} */
+
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    top:-100px;
+    color:white;
+    background-color:#333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.boton:hover .tooltip{
+    opacity: 1 ;
+    transition: 1s;
+}
+
+.tooltip:before{/*con esto hacemos un triangulo y lo posicionamos en la parte de abajo del tooltip*/
+    content:"";
+    border:solid 10px transparent;
+    border-top-color:#333;
+    position:absolute;
+    top:74px;
+    
+
+}
+
+

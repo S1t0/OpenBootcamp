@@ -1,0 +1,46 @@
+.padre {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+.hijo {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  /*transition: transform 1s linear 1s;/*1s=tiempo que tarda, linear=la forma en que lo hace, 2s=tiempo que tardara en empezar la
+  transicion*/ /*ponemos transition en la clase hijo, ya que si la ponemos en la siguiene, 
+  la del hover, al volver a su sitio lo hace de forma inmediata, no respeta el tiempo indicado*/
+
+  
+}
+
+.padre:hover .hijo { /* este selector es, cuando haga hover sobre el padre, al hijo afecta lo que hay en los corchetes*/
+  /*transform: translateX(100%) translateY(100%);
+  background-color: blueviolet;*/
+  animation:traslacion 2s 2 forwards;/*en las animaciones, ponemos el nombre que queramos, despues creamos lo que hace esa animacion*/
+
+}
+
+@keyframes traslacion{
+    0%{
+        background-color: brown;
+        transform: translateX(0%);
+
+    }
+    25%{
+        background-color: yellow;
+        transform: translateX(100%)translateY(0%);
+    }
+    50%{
+        background-color: aqua;
+        transform: translateX(100%) translateY(100%);
+        
+    }
+    75%{
+        background-color: darkorange;
+        transform: translateX(0%) translateY(100%);
+        
+    }
+    
+}

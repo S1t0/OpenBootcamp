@@ -1,0 +1,15 @@
+.escenario{
+    border:1px solid #333;
+    padding:10px
+}
+
+.escenario-1{
+    font-size: 32px;
+
+}
+.em{
+    font-size: 2em;/*em tiene en cuenta el tamaño del padre, por eso al poner escenario-1 el tamaño en 32 aumenta el em y no el rem*/
+}
+.rem{
+    font-size: 2rem;/*rem tiene en cuenta el tamaño de la raiz no del padre, por eso no aumenta de tamaño*/
+}

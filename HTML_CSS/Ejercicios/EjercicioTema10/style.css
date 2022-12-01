@@ -1,0 +1,47 @@
+.contenedor{
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+    display: flex;
+    
+}
+
+
+
+
+.elemento{
+    height: 10vh;
+    width: 7vw;
+    background-color: blue;
+    border:solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+    
+}
+
+.seccion-principal{
+    height: 30vh;
+    width: 30vw;
+    background-color: brown;
+    display: flex;
+    flex-grow:1;
+}
+
+@media screen and (max-width:640px){
+    .contenedor{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .barra-lateral{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .seccion-principal{
+        width: 50vw;
+    }
+
+}
